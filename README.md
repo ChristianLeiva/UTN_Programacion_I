@@ -3,6 +3,7 @@
 Este repositorio contiene los trabajos prácticos correspondientes a la materia **Programación I**.
 
 ## 📌 Información del Estudiante
+* **Estudiante:** Christian Leiva
 * **Carrera:** Tecnicatura Universitaria en Programación.
 * **Materia:** Programación I.
 * **Año:** 2026.
