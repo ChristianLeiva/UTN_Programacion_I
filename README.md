@@ -22,7 +22,6 @@ El repositorio está organizado por unidades temáticas siguiendo el programa of
     * Trabajos Colaborativos (`Git`, `Github`, `Github Desktop`)
 * **Unidad 5: Listas**
     * 
-
 * **Trabajos Prácticos (TPs):** Resoluciones detalladas de las guías obligatorias.
 
 ## 🛠️ Tecnologías Utilizadas
