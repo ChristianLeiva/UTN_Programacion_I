@@ -1,7 +1,6 @@
-# UTN_Programacion_I
 # Programación I - UTN (Tecnicatura Universitaria en Programación a distancia)
 
-Este repositorio contiene las actividades, ejercicios de clase y trabajos prácticos correspondientes a la materia **Programación I**, dictada en la modalidad a distancia por la **Universidad Tecnológica Nacional (UTN)**.
+Este repositorio contiene los trabajos prácticos correspondientes a la materia **Programación I**.
 
 ## 📌 Información del Estudiante
 * **Carrera:** Tecnicatura Universitaria en Programación.
