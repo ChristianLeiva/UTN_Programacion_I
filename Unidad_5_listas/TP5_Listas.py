@@ -4,12 +4,11 @@ import random
 # # Mostrar la lista completa.
 # # Calcular y mostrar el promedio.
 # # Indicar la nota más alta y la más baja.
-
 # notas = [10, 9, 8, 7, 9, 6, 5, 3, 4, 8]
 # # mostrar lista y sumar
 # suma = 0
+# print(notas)
 # for nota in notas:
-#     print(nota)
 #     suma += nota
 # # promedio
 # prom = suma / len(notas)
@@ -368,15 +367,15 @@ import random
 #     print("El producto más vendido es el 4")
 
 # # ----------------------------------------------------------------------
+# # Ejercicio 11
+# # 
+# # 
+# # ----------------------------------------------------------------------
 # # Ejercicio 12
 # # 
 # # 
 # # ----------------------------------------------------------------------
 # # Ejercicio 13
-# # 
-# # 
-# # ----------------------------------------------------------------------
-# # Ejercicio 
 # # 
 # # 
 # # ----------------------------------------------------------------------
