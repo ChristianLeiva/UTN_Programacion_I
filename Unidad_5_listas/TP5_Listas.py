@@ -247,30 +247,25 @@ import random
 #     ["__", "__", "__"],
 #     ["__", "__", "__"],
 # ]
-
 # jugador = "X"
 # ganador = False
 # movimientos = 0
 # ganador_jugador = ""
-
 # while not ganador and movimientos < 9:
 #     # Mostrar tablero
 #     print("\nTablero:")
 #     for fila_tablero in tablero:
 #         print(fila_tablero)
-
 #     fila = input("Elija la fila (1-3): ")
 #     while not fila.isdigit() or fila not in ["1", "2", "3"]:
 #         print("Error: número de fila inválido")
 #         fila = input("Elija la fila (1-3): ")
 #     fila = int(fila) - 1
-
 #     columna = input("Elija la columna (1-3): ")
 #     while not columna.isdigit() or columna not in ["1", "2", "3"]:
 #         print("Error: número de columna inválido")
 #         columna = input("Elija la columna (1-3): ")
 #     columna = int(columna) - 1
-
 #     # Verificar casillero
 #     if tablero[fila][columna] == "__":
 #         tablero[fila][columna] = jugador
@@ -279,48 +274,99 @@ import random
 #     else:
 #         print("Casillero ocupado, intente de nuevo.")
 #         continue
-
 #     # Verificar filas
 #     for f in range(3):
 #         if tablero[f][0] != "__" and tablero[f][0] == tablero[f][1] == tablero[f][2]:
 #             ganador = True
-
 #     # Verificar columnas
 #     for c in range(3):
 #         if tablero[0][c] != "__" and tablero[0][c] == tablero[1][c] == tablero[2][c]:
 #             ganador = True
-
 #     # Verificar diagonales
 #     if tablero[0][0] != "__" and tablero[0][0] == tablero[1][1] == tablero[2][2]:
 #         ganador = True
-
 #     if tablero[0][2] != "__" and tablero[0][2] == tablero[1][1] == tablero[2][0]:
 #         ganador = True
-
 #     # Guardar ganador antes de cambiar turno
 #     if ganador:
 #         ganador_jugador = jugador
 #         break
-
 #     # Cambiar jugador
 #     if jugador == 'X':
 #         jugador = 'O'
 #     else:
 #         jugador = 'X'
-
 # # Resultado final
 # print("\nTablero final:")
 # for fila_tablero in tablero:
 #     print(fila_tablero)
-
 # if ganador:
 #     print(f"\nEl jugador {ganador_jugador} ha ganado.")
 # else:
 #     print("\nEs un empate!")
 # # ----------------------------------------------------------------------
-# # Ejercicio 10
-# # 
-# # 
+# Ejercicio 10
+# Una tienda registra las ventas de 4 productos durante 7 días, en una matriz de 4*7.
+# Mostrar el total vendido por cada producto.
+# Mostrar el día con mayores ventas totales
+# Indicar cual fue el producto más vendido de la semana
+# dias = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"]
+# ventas = [
+#     ["prod 1"],
+#     ["prod 2"],
+#     ["prod 3"],
+#     ["prod 4"],
+# ]
+# total_prod_1 = 0
+# total_prod_2 = 0
+# total_prod_3 = 0
+# total_prod_4 = 0
+# mayor_venta = 0
+# dia_venta = 0
+# suma = 0
+# # Carga de matriz con numeros aleatorios de 1,20
+# for i in range(len(ventas)):
+#     for j in range(7):
+#         ventas[i].append(random.randint(1, 20))
+# # # Mostramos la lista ventas
+# print("*** Lista de Ventas ***")
+# for v in range(len(ventas)):
+#     print(ventas[v])
+# # suma total de ventas por producto
+# print("\n*** Total de ventas por producto ***")
+# for f in range(len(ventas)):
+#     for c in range(len(ventas[f])):
+#         if(ventas[f][c] == "prod 1"):
+#             total_prod_1 = sum(ventas[f][1:])
+#             print(f"El total de ventas del {ventas[f][0]} es de {total_prod_1}")
+#         if(ventas[f][c] == "prod 2"):
+#             total_prod_2 = sum(ventas[f][1:])
+#             print(f"El total de ventas del {ventas[f][0]} es de {total_prod_2}")
+#         if(ventas[f][c] == "prod 3"):
+#             total_prod_3 = sum(ventas[f][1:])
+#             print(f"El total de ventas del {ventas[f][0]} es de {total_prod_3}")
+#         if(ventas[f][c] == "prod 4"):
+#             total_prod_4 = sum(ventas[f][1:])
+#             print(f"El total de ventas del {ventas[f][0]} es de {total_prod_4}")
+# print("\n*** Día con mayor venta ***" )
+# for c in range(1, len(ventas[0])):
+#     ventas_dia = 0    
+#     for f in range(len(ventas)):
+#         ventas_dia += ventas[f][c]    
+#     if ventas_dia > mayor_venta:
+#         mayor_venta = ventas_dia
+#         dia_venta = c
+# print(f"El día con mayor venta fue {dias[dia_venta]}")
+# print("\n*** Producto más vendido ***" )
+# if total_prod_1 > total_prod_2 and total_prod_1 > total_prod_3 and total_prod_1 > total_prod_4:
+#     print("El producto más vendido es el 1")
+# elif total_prod_2 > total_prod_1 and total_prod_2 > total_prod_3 and total_prod_2 > total_prod_4:
+#     print("El producto más vendido es el 2")
+# elif total_prod_3 > total_prod_1 and total_prod_3 > total_prod_2 and total_prod_3 > total_prod_4:
+#     print("El producto más vendido es el 3")
+# else:
+#     print("El producto más vendido es el 4")
+
 # # ----------------------------------------------------------------------
 # # Ejercicio 12
 # # 
