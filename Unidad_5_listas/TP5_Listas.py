@@ -368,17 +368,59 @@ import random
 
 # # ----------------------------------------------------------------------
 # # Ejercicio 11
-# # 
-# # 
+# # Crear una lista con los nombres de 10 estudiantes
+# # Solicitar al usuario que ingrese un nombre a buscar
+# # Indicar si el nombre se encuentra en la lista
+# # Mostrar la posición en la que aparece
+# # Si no se encuentra, informar que no esta en la lista
+# estudiantes = ["Ana", "Luis", "Marta", "Juan", "Sofía", "Carlos", "Elena", "Pedro", "Lucía", "Diego"]
+# estudiantes_lower = [e.lower() for e in estudiantes] # Pasamos la lista incial a lower para que no haya problemas con la busqueda
+# nombre = input("Ingrese el nombre del estudiante a buscar\n").strip().lower()
+# while not nombre.isalpha():
+#     print("Error: El nombre ingresado no es valido.")
+#     nombre = input("Ingrese el nombre del estudiante a buscar\n").strip().lower()
+# if(nombre in estudiantes_lower):
+#     index = estudiantes_lower.index(nombre)
+#     print(f"El nombre {estudiantes[index]} esta en la posición {index}") #Buscamos en la lista origianl con el index para que salga el nombre Capitalizado
+# else:
+#     print(f"El nombre {nombre} no existe en la lista.")
+
 # # ----------------------------------------------------------------------
 # # Ejercicio 12
-# # 
-# # 
+# # Pedir al usuario que ingrese 8 números enteros y almacenarlos en una lista
+# # Mostrar la lista original
+# # Mostrar la lista ordenada de menor a mayor
+# # Mostrar la lista ordenada de mayor a menor
+# numeros = []
+# for n in range(8):
+#     num = input(f"Ingrese un número entero {n + 1} de 8:\n")
+#     while not num.isdigit():
+#         print("Error: caracter invalido")
+#         num = input(f"Ingrese un número entero {n + 1} de 8:\n")
+#     num = int(num)
+#     numeros.append(num)
+# print("\n*** Lista Original ***")
+# print(numeros)
+# print("\n*** Lista ordenada menor a mayor ***")
+# lista_ordenada = sorted(numeros)
+# print(lista_ordenada)
+# print("\n*** Lista ordenada mayor a menor***")
+# lista_ordenada = sorted(lista_ordenada, reverse=True)
+# print(lista_ordenada)
+
 # # ----------------------------------------------------------------------
 # # Ejercicio 13
-# # 
-# # 
+# # Dada la lista de puntajes de un videojuego.
+# # Mostrar el puntaje más alto y el más bajo
+# # Mostrar la lista ordenada de mayor a menor (rankingc)
+# # indicar en que posición del ranking se encuentra el puntaje 990
+# puntajes = [450, 1200, 875, 990, 300, 1500, 640]
+# print("*** Lista Original ***")
+# print(puntajes)
+# print("\n*** Ranking de puntajes ***")
+# print(f"El puntaje más alto es: {max(puntajes)}")
+# print(f"El puntaje más bajo es: {min(puntajes)}")
+# print("\n*** Lista de ranking ordenada de mayor a menor ***")
+# print(f"{sorted(puntajes, reverse=True)}")
+# print(f"\nEl puntaje 990 se encuentra en la posición {puntajes.index(990)} de la lista original")
 # # ----------------------------------------------------------------------
-# # Ejercicio 
-# # 
-# # 
