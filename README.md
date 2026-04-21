@@ -22,6 +22,8 @@ El repositorio está organizado por unidades temáticas siguiendo el programa of
     * Trabajos Colaborativos (`Git`, `Github`, `Github Desktop`)
 * **Unidad 5: Listas**
     * Metodos importantes (`append`,`insert`,`extend`,`remove`,`pop`,`clear`,`sort`,`reverse`,`index`,`count`)
+* **Unidad 6: Funciones**
+    * Metodos importantes (`def`)
 * **Trabajos Prácticos (TPs):** Resoluciones detalladas de las guías obligatorias.
 
 ## 🛠️ Tecnologías Utilizadas
