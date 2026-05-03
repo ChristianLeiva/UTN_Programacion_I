@@ -1,4 +1,5 @@
 # # Trabajo Practico N° 7: Estructura de Datos Complejas
+# # Funciones que se usen en la mayoria de los ejercicios
 def validar_nombre(msj: str) -> str:
     nombre = input(msj).capitalize()
     while not nombre.isalpha():
@@ -200,16 +201,16 @@ def validar_numero(msj : str) -> int:
 #         print("Error: Opción Invalida. Ingrese nuevamente.")
 #         continue
 
-# Dado un diccionario que mapea nombres de países con sus capitales, construí uno nuevo donde las capitales sean las claves y los paises los valores
-paises_capitales = {
-    "Argentina": "Buenos Aires",
-    "Chile": "Santiago",
-    "Uruguay": "Montevideo"
-}
+# # Dado un diccionario que mapea nombres de países con sus capitales, construí uno nuevo donde las capitales sean las claves y los paises los valores
+# paises_capitales = {
+#   "Argentina": "Buenos Aires",
+#    "Chile": "Santiago",
+#    "Uruguay": "Montevideo"
+#}
 
-capitales_paises = {}
+# capitales_paises = {}
 
-for pais, capital in paises_capitales.items():
-    capitales_paises[capital] = pais
-print("Diccionario invertido:")
-print(capitales_paises)
+# for pais, capital in paises_capitales.items():
+#    capitales_paises[capital] = pais
+# print("Diccionario invertido:")
+# print(capitales_paises)
